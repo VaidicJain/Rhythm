@@ -1,0 +1,31 @@
+.musicBox{
+    height: 40vh;
+    grid-template-columns: repeat(2, 190px);
+    grid-template-rows: repeat(3, 125px);
+    padding-left: 10px;
+}
+.container{
+    height: 58vh;
+}
+.homePage{
+    height: 87vh;
+}
+.box{
+    height: 120px;
+    width: 190px;
+}
+.box img{
+    height: 120px;
+    width: 190px;
+}
+#theme-icon{
+    top: 45px;
+    right: 45px;
+}
+#setting-icon{
+    top: 45px;
+    right: 10px;
+}
+.footer{
+    font: 0.8rem;
+}

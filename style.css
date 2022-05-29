@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Inter:wght@300&family=Kanit:ital,wght@1,300&family=Lato:wght@300&family=Lobster+Two:ital@1&family=PT+Sans&family=Pacifico&family=Poppins:ital,wght@1,300&family=Square+Peg&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Slash screen styling */
+.splash{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    background: black;
+    z-index: 200;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+}
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    background: black;
+    z-index: -10;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 0.8s;
+}
+#splash-h1{
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 5s forwards;
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fadeIn{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+ body{
+     background-color: white;
+     /* color: white; */
+}
+
+/* Navbar styling */
+.navbar{
+    display: flex;
+    height: 10vh;
+    background-color:white;
+    /* color: white; */
+    /* margin-top: px; */
+}
+#navbar-ul{
+    width: 100vw;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    list-style: none;
+    font-family: 'Kanit', sans-serif;
+    /* background-color: rgb(105, 58, 58); */
+    /* color: white; */
+}
+#logo{
+    /* height: 40px;
+    width: 40px; */
+    margin: 0px 10px;
+}
+#setting-icon{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+#theme-icon{
+    /* height: 35px;
+    width: 35px; */
+    position: absolute;
+    top: 30px;
+    right: 70px;
+    cursor: pointer;
+}
+#theme-icon:hover{
+    color: rgb(250, 115, 47);
+}
+#setting-icon:hover{
+    color: rgb(250, 115, 47);
+    cursor: pointer;
+}
+.nav-li{
+    margin: 5px;
+}
+.nav-li a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.nav-li a:hover{
+    color: #fa732f !Important; 
+}
+/* Home page styling*/
+.homePage{
+    height: 130vh;
+    width: 98.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(./Images/adrian-infernus-GLf7bAwCdYg-unsplash.jpg) no-repeat center center/cover;  
+}
+.container{
+    height: 110vh;
+    width: 85vw;
+    border-radius: 30px;
+    text-align: center;
+    background-color: rgba(221, 221, 221, 0.297);
+    backdrop-filter: blur(3px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    border-left: 1px solid rgba(255,255,255,0.5);
+    box-shadow: 10px 10px 50px rgb(0 0 0 / 50%);
+}
+.heading{
+    height: 5vh;
+    margin: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.musicBox{
+    /* background-color: blanchedalmond; */
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-template-rows: repeat(3, 280px);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+}
+.box{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    /* background-color: darkgray; */
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.box img{
+    display: block;
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+}
+.imageOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: white;
+    transition: opacity 0.5s;
+}
+.imageOverlay i:hover{
+    color:rgb(189, 189, 189);
+}
+.imageOverlay:hover{
+    opacity: 1;
+}
+#progressBar{
+    width: 60vw;
+    margin: 5px;
+}
+.icons{
+    /* height: 100px; */
+    width: 50px;
+    
+}
+
+
+/* Footer styling */
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 3.2vh;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+
+
