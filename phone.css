@@ -1,14 +1,14 @@
 
 .musicBox{
-    height: 60vh;
+    height: 85vh;
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(3, 180px);
 }
 .container{
-    height: 80vh;
+    height: 110vh;
 }
 .homePage{
-    height: 100vh;
+    height: 140vh;
 }
 .box{
     height: 160px;
@@ -19,8 +19,8 @@
     width: 270px;
 }
 #theme-icon{
-    top: 45px;
+    top: 30px;
 }
 #setting-icon{
-    top: 45px;
+    top: 30px;
 }
